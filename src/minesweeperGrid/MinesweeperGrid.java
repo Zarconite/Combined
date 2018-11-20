@@ -115,14 +115,19 @@ public class MinesweeperGrid {
 		int xSize = 0;
 		int ySize= 0;
 		int mines = 0;
+		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Number of x/y grid spaces:");
+		
 		try {
 			xSize = scanner.nextInt();
 		}
 		catch(Exception e){
 			System.out.println("Please enter a valid number!");
-		}/* Edited out for now
+		}
+		
+		/* Edited out for now, different aspect ratio's throw an exception
+		 
 		System.out.println("Enter Number of y grid spaces:");
 		try {
 			ySize = scanner.nextInt();
@@ -130,6 +135,7 @@ public class MinesweeperGrid {
 		catch(Exception e){
 			System.out.println("Please enter a valid number!");
 		}*/
+		
 		System.out.println("Enter Number of mines:");
 		try {
 			mines = scanner.nextInt();
@@ -137,7 +143,9 @@ public class MinesweeperGrid {
 		catch(Exception e){
 			System.out.println("Please enter a valid number!");
 		}
+		
 		scanner.close();
+		
 		System.out.println("Generating grid of size: "+xSize+"x"+xSize+" with "+mines+" mines."); //set back to ySize after fixing different aspect ratio's, same for the line below
 		buildArray(xSize,xSize,mines); //[X spaces], [Y spaces], [Number of mines]
 		
