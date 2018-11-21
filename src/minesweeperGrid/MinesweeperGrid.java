@@ -99,10 +99,15 @@ public class MinesweeperGrid {
 						gridArray[k][j]= "["+intArray[k][j]+"]";
 					}
 					if(k==(xGridSpaces-1)) {
+						
 						System.out.println(gridArray[k][j]); //print next line if it's reached the end of the row
+						
 					}
 					else {
+					
+						
 						System.out.print(gridArray[k][j]); //print a row of grid spaces
+						
 					}
 				}
 			}

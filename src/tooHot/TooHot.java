@@ -8,10 +8,10 @@ public class TooHot {
 			summerTrue=10;
 		}
 		if(temperature>=60 && temperature<=(90+summerTrue)) {
-			System.out.print("Result = True");	
+			System.out.print("Result = Fine");	
 		}
 		else {
-		System.out.print("Result = False");	
+		System.out.print("Result = Not good");	
 		}
 	}
 	
